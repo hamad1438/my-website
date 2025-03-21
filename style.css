@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 11px;
+}
+
+header{
+    background-color: #006b68;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 9%;
+}
+.home-logo{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-logo span{
+    margin-left: 90px;
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+header .logo{
+margin-left:100px;
+font-size: 3rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+  
+}
+nav a{
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color:white ;
+}
+nav a i {
+    margin-left: 10px;
+}
+nav a span{
+    margin-top: 5px  ;
+    font-size: 1.3rem;
+}
+
+main{
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   height: 100vh;
+    background-color: #004846;
+}
+
+main h1{
+    color: white;
+    margin-left: 100px;
+    font-size: 3rem;
+    padding-top: 5%;
+    padding-right: 40%;
+}
+main .content{
+    max-width: 100%; 
+    
+  padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main img{
+    width: 350px;
+    height: 400px;
+
+}
+main table{
+    width: 100%;
+    font-size: 12px;
+    table-layout: fixed;
+    
+}
+main table, th, td {
+    border: white 2px solid;
+    border-collapse: collapse;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    background-color: black;
+}
+
+table td input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    align-items: center;
+    background-color: #004846;
+    height: 100vh;
+    scroll-margin-top: 100px;
+}
+
+section h2{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 3%;
+ 
+}
+
+.The-goals{
+display: flex;
+justify-content: start;
+width: 100%;
+background-color: #004846;
+flex-wrap: wrap;
+height: fit-content;
+}
+
+.check-contant{
+display: flex;
+width: calc(33.33% - 20px); 
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+padding: 20px ;
+background-color: black;
+height: 300px;
+margin: 4px;
+}
+
+.check-contant:hover{
+  scale: 1.02;
+  transition: 0.5s;
+}
+
+.check-contant input:first-child {
+    padding-right: 1px;
+    margin-top: 4px;
+    width: 50px;
+    height: 50px; 
+}
+
+.check-contant textarea{
+    resize: none;
+    margin-top: 50px;
+    width: 200px;
+    height: 100px;
+    text-align: center; 
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.article{
+    background-color: #004846;
+    height: 100vh;
+    text-align: center;
+scroll-margin-top: 100px;
+    width: 100%;
+}
+
+.article h2{
+  color: white;
+font-size: 3rem;
+}
+
+.grid{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    
+    margin: 1%;
+}
+.contant1{
+    
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    transition:  0.5s ease ;
+}
+
+.contant1 img{
+    width: 450px;
+    height:246px;
+}
+
+.contant1 .details{
+    margin: 3% 1% 1% 1%;
+display: flex;
+justify-content: space-between;
+
+}
+
+.contant1:hover{
+    
+    scale: 1.04;
+    
+}
+
+.details p{
+    max-width: 45ch;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.details button{
+    cursor: pointer;
+    width: 80px;
+    height:45px;
+    font-size: 1rem;
+    color: white;
+    background-color: #004846;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    
+}
+
+.details button:hover{
+scale: 1.05;
+font-weight: 700;
+}
+
+footer{
+    height:8vh;
+    background-color: black;
+}
+
+.icons{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.icons i{
+ margin: 10px 10px 0 232px;
+    font-size: 3rem;
+    color: white;
+}
+
+.icons i:hover{
+    scale: 1.009;
+}
+
+/* لأجهزة iPhone 13 Pro Max (390px - 430px) */
+@media (max-width: 430px) {
+    html {
+        font-size: 9px;
+    }
+    header {
+        height: 12%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-logo span {
+        margin-left: 20px;
+        font-size: 1.1rem;
+    }
+    header .logo {
+        margin-left: 20px;
+        font-size: 2.5rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    main h1 {
+        font-size: 2rem;
+        margin-left: 20px;
+        padding-right: 10%;
+    }
+    main img {
+        width: 280px;
+        height: 320px;
+    }
+    main .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    main table {
+        font-size: 10px;
+    }
+    section h2, .article h2 {
+        font-size: 2.5rem;
+    }
+    .The-goals {
+        flex-direction: column;
+        align-items: center;
+    }
+    .check-contant {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contant1 img {
+        width: 100%;
+        height: auto;
+    }
+    .icons i {
+        margin: 10px;
+        font-size: 2rem;
+    }
+}
+
+/* للأجهزة اللوحية (768px - 1024px) */
+@media (max-width: 1024px) {
+    html {
+        font-size: 10px;
+    }
+    header {
+        height: 10%;
+    }
+    nav a {
+        padding: 15px;
+    }
+    main h1 {
+        font-size: 2.5rem;
+        padding-right: 20%;
+    }
+    main img {
+        width: 320px;
+        height: 360px;
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .check-contant {
+        width: 45%;
+        height: 250px;
+    }
+}
